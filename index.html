@@ -4,12 +4,24 @@
     <title>Contact Picker API</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../contactPicker/style.css">
+    <link rel="stylesheet" href="../style.css">
   </head>  
   <body>
     <h1>
       Contact Picker API Demo
     </h1>
+    
+    <p id="requireHTTPS" class="hidden">
+      <b>STOP!</b> This page <b>must</b> be served over HTTPS.
+      Please <a>reload this page via HTTPS</a>.
+    </p>
+       
+    <p id="notSupported">
+      <b>Sorry!</b> This browser doesn't support the Contact
+      Picker API, which required for this demo. Try enabling the
+      <code>#enable-experimental-web-platform-features</code> in
+      chrome://flags and try again.
+    </p>
        
     <p>
       Access to the user’s contacts has been a feature of native apps since (almost) 
@@ -18,6 +30,11 @@
       and share limited details of the selected contact(s) with a website. 
       It allows users to share only what they want, when they want, and makes 
       it easier for users to reach and connect with their friends and family.
+    </p>
+
+    <p>
+      <b>Note:</b> This demo requires Chrome 80 or later 
+      running on Android M or later to work properly.
     </p>
 
     <ol>
@@ -68,9 +85,15 @@
     <pre id="rawResults">
     </pre>
     
+    <p>
+      See <a href="https://developers.google.com/web/updates/2019/08/contact-picker" target="_blank">A Contact Picker for the Web</a>
+      for complete details on the API, including use cases, how it was designed, and how to use it.
+    </p>
+    
 
-    <script src="../contactPicker/common.js"></script>
-    <script src="../contactPicker/demo.js"></script>
+    
+    <script src="../common.js"></script>
+    <script src="../demo.js"></script>
 
   </body>
 </html>
